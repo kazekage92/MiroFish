@@ -20,7 +20,7 @@ RUN npm ci \
   && npm ci --prefix frontend \
   && cd backend && uv sync --frozen
 
-# 复制项目源码
+# 复制项目源码 (cache bust v2)
 COPY . .
 
 EXPOSE 3000 5001
